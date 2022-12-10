@@ -1,0 +1,102 @@
+
+body {
+    background-image: url(./img/bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #1f1f1f;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+article {
+    display: flex;  
+    flex-direction: column;
+}
+.question{
+    display: none;
+}
+.result{
+    display: none;
+}
+
+#img{
+    width: 300px; 
+    height: 300px; 
+    margin: 0 auto;
+}
+.ad_banner, .end_banner{
+    flex-direction: row;
+}
+.banner-img {
+    width: 100%;
+}
+.main-title {
+    font-size: 14px;
+    color: #7c7c7c;
+}
+.sub-title {
+    font-size: 24px;
+    font-weight: 100;
+    color: #1f1f1f;
+}
+.main_bn{
+    width: 400px;
+    margin: 0 auto;
+}
+.ys-logo {
+    width: 96px;
+    margin: 0 auto;
+}
+.copyright-text {
+    font-family: 'Nanum Gothic', sans-serif;
+    color: #7c7c7c;
+}
+.question-text{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+}
+.question-content {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 20px;
+    font-family: 800;
+    color: #1f1f1f;
+}
+#salary{
+    color: #5D44AD;
+}
+#explain{
+    font-family: "Noto Sans KR";
+    font-size: 18px;
+}
+#job{
+    color: #5D44AD;
+}
+.start_btn{
+    font-size: 32px;
+    padding: 15px 0;
+}
+.again{
+    display: none;
+    text-align: center;
+}
+.again div{
+    display: flex;
+    flex-direction: column;
+    font-family: "Nanum Gothic";
+}
+.bye{
+    display: none;
+}
+.img300{
+    width: 300px;
+    height: 300px; 
+    margin: 0 auto;
+}
+.fl_col{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.goal{
+    display: none;
+}
