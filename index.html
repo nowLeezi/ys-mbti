@@ -13,14 +13,14 @@
 </head>
 <body class="container">
     <article class="start">
-        <h1 class="main-title mt-5 text-center">MBTI 직업적성검사</h1>
-        <h2 class="sub-title mt-2 text-center">나의 초봉은 얼마나 될까 !?</h2>
+        <h1 class="title16 mt-3">MBTI 직업적성검사</h1>
+        <h2 class="title24 mt-2">나의 초봉은 얼마나 될까 !?</h2>
         <img class="main_bn" src="./img/main.png" alt="main_bn">
         <button type="button" class="start_btn btn btn-primary mb-5" onclick="start();">테스트 시작하기</button>
     </article>
     <!-- 시작페이지 -->
     <article class="question">
-        <div class="progress mt-5">
+        <div class="progress mt-3">
             <div class="progress-bar" role="progressbar" style="width: 25%" ></div>
         </div>
         <img class="main_bn mt-5" src="./img/click.png" alt="main_bn">
@@ -31,13 +31,14 @@
     </article>
     <!-- 문제페이지 -->
     <article class="result">
-        <img id="img" class="rounded-circle mt-5" src="./img/bigdata.jpeg" alt="job">
-        <h1 class="text-center mt-5 title28">MBTI에 따른 나의 연봉 측정!</h1>
-        <h3 id="explain" class="text-center">설명</h3>
-        <h2 id="salary" class="mt-3 title32">연봉</h2>
-        <h1 class="text-center mt-5 title28">추천 직업</h1>
-        <h3 id="job" class="mt-3 mb-3 title32">직업</h3>
-        <h5 class="mt-5 mb-3 q-text text-center">↓↓↓ 무료교육 신청하고 연봉올리기 ↓↓↓</h5>
+        <h3 id="mbtiType" class="title28 title_clr">MBTI유형</h3>
+        <h3 id="explain" class="mt-1">설명</h3>
+        <img id="img" class="rounded-circle mt-4" src="./img/bigdata.jpeg" alt="job">
+        <h1 class="text-center mt-4 title28">MBTI에 따른 나의 연봉 측정!</h1>
+        <h2 id="salary" class="mt-2 title32">연봉</h2>
+        <h1 class="mt-5 title24" style="font-weight: 600;">- 추천 직업 -</h1>
+        <h3 id="job" class="mt-2 title32">직업</h3>
+        <h5 class="mt-4 mb-3 q-text">↓↓↓ 무료교육 신청하고 연봉올리기 ↓↓↓</h5>
         <article class="end_banner">
             <a class="mt-2 mr-1 banner" href="https://ysedu.or.kr/p/?j=232&edu_code=Vmtab2QxWnRWbEpRVkRBOStN"><img class="banner-img" src="./img/ad1.png" alt="UI/UX 디자인과 프론트엔드 개발자"></a>
             <a class="mt-2 mr-1 banner" href="https://ysedu.or.kr/p/?j=232&edu_code=Vmtab2QxVnJNVkpRVkRBOStN"><img class="banner-img" src="./img/ad2.png" alt="AI플랫폼을 활용한 빅데이터 분석 전문가"></a>
@@ -54,7 +55,7 @@
     </article>
     <!-- 결과페이지 -->
     <article class="again">
-        <h1 class="mt-5">나도 무료교육 신청 대상일까?</h1>
+        <h1 class="mt-3">나도 무료교육 신청 대상일까?</h1>
         <div class="mt-2">
             <button type="button" class="bye1 btn btn-secondary mt-3">만 75세 이상이거나<br>국민기초생활보장법 제9조에 따른 생계급여 수급자이다.</button>
             <button type="button" class="bye1 btn btn-secondary mt-3">공무원 또는 사립학교의 교직원 또는<br>졸업까지 남은 수업연한이 2년을 초과하는 대학생이다</button>
@@ -64,7 +65,7 @@
     </article>
     <!-- 내배카대상확인 -->
     <article class="bye">
-        <img class="img300 rounded-circle mt-5" src="./img/bye.jpg" alt="bye">
+        <img class="img300 rounded-circle mt-3" src="./img/bye.jpg" alt="bye">
         <h1 class="fl_col mt-5">측정불가</h1>
         <h3 class="fl_col mt-3">아쉽지만 국비지원 교육 신청 대상이 아니네요.</h3>
         <a class="fl_col mt-2 mr-1 banner" href="https://www.ysedu.or.kr/"><button type="button" class="btn btn-primary mt-3">그래도 조금 더 알아볼까?</button></a>
@@ -72,7 +73,7 @@
     </article>
     <!-- 측정불가 -->
     <article class="goal">
-        <img class="img300 rounded-circle mt-5" src="./img/goal.gif" alt="goal">
+        <img class="img300 rounded-circle mt-3" src="./img/goal.gif" alt="goal">
         <h1 class="fl_col mt-5">축하합니다!</h1>
         <h3 class="fl_col mt-3">무료 수강 대상입니다!!! </h3>
         <div class="fl_col mt-2 mr-1">
@@ -119,22 +120,22 @@
         }
         // 문항
         var result = {
-            "ISTJ" : {"salary":" 3,000~4,581 만원", "explain":"한번 시작한 일은 끝까지 해내는 타입", "job":"웹개발자", "img":"./img/webprogramming.png"},
-            "ISFJ" : {"salary":" 3,522~5,180 만원", "explain":"성실하고 온화하며 협조를 잘하는 당신", "job":"클라우드 보안 전문가", "img":"./img/cloud.jpg"},
-            "INFJ" : {"salary":" 3,917~5,500 만원", "explain":"사람과 관련된 뛰어난 통찰력을 가지고 있는 사람. 천직이군요.", "job":"빅데이터 전문가", "img":"./img/bigdata.jpeg"},
-            "INTJ" : {"salary":" 3,885~6,308 만원", "explain":"전체적인 부분을 조합하여 비전을 제시하는 사람", "job":"게임프로그래밍 전문가", "img":"./img/game.jpeg"},
-            "ISTP" : {"salary":" 3,917~5,500 만원", "explain":"논리적이고 뛰어난 상황 적응력을 가지고 있는 사람", "job":"데이터분석전문가", "img":"./img/bigdata.jpeg"},
-            "ISFP" : {"salary":" 3,104~4,633 만원", "explain":"따뜻한 가성을 가지고 있는 겸손한 사람", "job":"웹디자이너", "img":"./img/web.jpg"},
-            "INFP" : {"salary":" 3,000~3,715 만원", "explain":"이상적인 세상을 만들어가는 사람, 당신에게 어울리는 직업", "job":"게임그래픽 디자이너", "img":"./img/game.jpeg"},
-            "INTP" : {"salary":" 3,885~6,308 만원", "explain":"비평적인 관점을 가지고 있는 뛰어난 전략가", "job":"웹/시스템/응용 프로그래머", "img":"./img/program.jpeg"},
-            "ESTP" : {"salary":" 3,000~4,581 만원", "explain":"다양한 활동을 선호하는 당신에게 꼭 어울리는 직업", "job":"프론트엔드 개발자", "img":"./img/webprogramming.png"},
-            "ESFP" : {"salary":" 3,613~4,731 만원", "explain":"자유로운 영혼의 연예인", "job":"UIUX디자이너", "img":"./img/uiux.jpeg"},
-            "ENFP" : {"salary":" 3,917~5,500 만원", "explain":"열정적으로 새로운 관계를 만드는 사람", "job":"빅데이터전문가", "img":"./img/bigdata.jpeg"},
-            "ENTP" : {"salary":" 3,000~3,715 만원", "explain":"풍부한 상상력을 가지고 새로운 것에 도전하는 사람", "job":"게임그래픽 디자이너", "img":"./img/game.jpeg"},
-            "ESTJ" : {"salary":" 3,917~5,500 만원", "explain":"실용적, 현실적으로 일을 많이하는 사람", "job":"백엔드 개발자", "img":"./img/program.jpeg"},
-            "ESFJ" : {"salary":" 3,522~5,180 만원", "explain":"친절과 현실감을 바탕으로 타인에게 봉사하는 사람", "job":"클라우드 엔지니어", "img":"./img/cloud.jpg"},
-            "ENFJ" : {"salary":" 3,204~4,248 만원", "explain":"타인의 성장을 도모하고 협동하는 사람", "job":"보안솔루션 전문가", "img":"./img/cloud.jpg"},
-            "ENTJ" : {"salary":" 3,204~4,248 만원", "explain":"비전을 가지고 사람들을 활력적으로 이끌어가는 사람", "job":"침해대응 전문가", "img":"./img/security.jpg"}
+            "ISTJ" : {"salary":"3,000~4,581 만원", "mbtiType":"ISTJ", "explain":"한번 시작한 일은 끝까지 해내는 타입", "job":"웹개발자", "img":"./img/webprogramming.png"},
+            "ISFJ" : {"salary":"3,522~5,180 만원", "mbtiType":"ISFJ", "explain":"성실하고 온화하며 협조를 잘하는 당신", "job":"클라우드 보안 전문가", "img":"./img/cloud.jpg"},
+            "INFJ" : {"salary":"3,917~5,500 만원", "mbtiType":"INFJ", "explain":"사람과 관련된 뛰어난 통찰력을 가지고 있는 사람. 천직이군요.", "job":"빅데이터 전문가", "img":"./img/bigdata.jpeg"},
+            "INTJ" : {"salary":"3,885~6,308 만원", "mbtiType":"INTJ", "explain":"전체적인 부분을 조합하여 비전을 제시하는 사람", "job":"게임프로그래밍 전문가", "img":"./img/game.jpeg"},
+            "ISTP" : {"salary":"3,917~5,500 만원", "mbtiType":"ISTP", "explain":"논리적이고 뛰어난 상황 적응력을 가지고 있는 사람", "job":"데이터분석전문가", "img":"./img/bigdata.jpeg"},
+            "ISFP" : {"salary":"3,104~4,633 만원", "mbtiType":"ISFP", "explain":"따뜻한 가성을 가지고 있는 겸손한 사람", "job":"웹디자이너", "img":"./img/web.jpg"},
+            "INFP" : {"salary":"3,000~3,715 만원", "mbtiType":"INFP", "explain":"이상적인 세상을 만들어가는 사람, 당신에게 어울리는 직업", "job":"게임그래픽 디자이너", "img":"./img/game.jpeg"},
+            "INTP" : {"salary":"3,885~6,308 만원", "mbtiType":"INTP", "explain":"비평적인 관점을 가지고 있는 뛰어난 전략가", "job":"웹/시스템/응용 프로그래머", "img":"./img/program.jpeg"},
+            "ESTP" : {"salary":"3,000~4,581 만원", "mbtiType":"ESTP", "explain":"다양한 활동을 선호하는 당신에게 꼭 어울리는 직업", "job":"프론트엔드 개발자", "img":"./img/webprogramming.png"},
+            "ESFP" : {"salary":"3,613~4,731 만원", "mbtiType":"ESFP", "explain":"자유로운 영혼의 연예인", "job":"UIUX디자이너", "img":"./img/uiux.jpeg"},
+            "ENFP" : {"salary":"3,917~5,500 만원", "mbtiType":"ENFP", "explain":"열정적으로 새로운 관계를 만드는 사람", "job":"빅데이터전문가", "img":"./img/bigdata.jpeg"},
+            "ENTP" : {"salary":"3,000~3,715 만원", "mbtiType":"ENTP", "explain":"풍부한 상상력을 가지고 새로운 것에 도전하는 사람", "job":"게임그래픽 디자이너", "img":"./img/game.jpeg"},
+            "ESTJ" : {"salary":"3,917~5,500 만원", "mbtiType":"ESTJ", "explain":"실용적, 현실적으로 일을 많이하는 사람", "job":"백엔드 개발자", "img":"./img/program.jpeg"},
+            "ESFJ" : {"salary":"3,522~5,180 만원", "mbtiType":"ESFJ", "explain":"친절과 현실감을 바탕으로 타인에게 봉사하는 사람", "job":"클라우드 엔지니어", "img":"./img/cloud.jpg"},
+            "ENFJ" : {"salary":"3,204~4,248 만원", "mbtiType":"ENFJ", "explain":"타인의 성장을 도모하고 협동하는 사람", "job":"보안솔루션 전문가", "img":"./img/cloud.jpg"},
+            "ENTJ" : {"salary":"3,204~4,248 만원", "mbtiType":"ENTJ", "explain":"비전을 가지고 사람들을 활력적으로 이끌어가는 사람", "job":"침해대응 전문가", "img":"./img/security.jpg"}
         }
         // 결과값
         function goTop(){
@@ -193,6 +194,7 @@
                 $("#img").attr("src",result[mbti]["img"]);
                 $("#salary").html(result[mbti]["salary"]);
                 $("#job").html(result[mbti]["job"]);
+                $("#mbtiType").html(result[mbti]["mbtiType"]);
                 $("#explain").html(result[mbti]["explain"]);
             }
                 else {
