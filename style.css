@@ -6,6 +6,7 @@ body {
     background-size: cover;
     color: #1f1f1f;
     font-family: 'Nanum Gothic', sans-serif;
+    font-size: 20px;
 }
 article {
     display: flex;  
@@ -17,7 +18,6 @@ article {
 .result{
     display: none;
 }
-
 #img{
     width: 300px; 
     height: 300px; 
@@ -30,42 +30,44 @@ article {
     width: 100%;
 }
 .main-title {
-    font-size: 14px;
+    font-size: 16px;
     color: #7c7c7c;
 }
 .sub-title {
     font-size: 24px;
-    font-weight: 100;
-    color: #1f1f1f;
+    font-weight: 300;
+}
+.title28{
+    font-size: 28px;
+    font-weight: 600;
+}
+.title32{
+    font-size: 32px; font-weight: 300; text-align: center;
 }
 .main_bn{
-    width: 400px;
+    width: 80%;
     margin: 0 auto;
 }
 .ys-logo {
-    width: 96px;
+    width: 120px;
     margin: 0 auto;
 }
 .copyright-text {
-    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 16px;
     color: #7c7c7c;
 }
-.question-text{
-    font-family: 'Nanum Gothic', sans-serif;
-    font-size: 16px;
-    font-weight: 800;
+.q-text{
+    font-size: 18px;
+    font-weight: 600;
 }
-.question-content {
-    font-family: 'Nanum Gothic', sans-serif;
+.q-content {
     font-size: 20px;
-    font-family: 800;
-    color: #1f1f1f;
+    font-family: 600;
 }
 #salary{
     color: #5D44AD;
 }
 #explain{
-    font-family: "Noto Sans KR";
     font-size: 18px;
 }
 #job{
@@ -82,7 +84,6 @@ article {
 .again div{
     display: flex;
     flex-direction: column;
-    font-family: "Nanum Gothic";
 }
 .bye{
     display: none;
