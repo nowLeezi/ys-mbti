@@ -15,7 +15,7 @@
     <article class="start">
         <h1 class="main-title mt-5 text-center">MBTI 직업적성검사</h1>
         <h2 class="sub-title mt-2 text-center">나의 초봉은 얼마나 될까 !?</h2>
-        <img class="main_bn" src="./img/main.png" alt="main">
+        <img class="main_bn" src="./img/main.png" alt="main_bn">
         <button type="button" class="start_btn btn btn-primary mb-5" onclick="start();">테스트 시작하기</button>
     </article>
     <!-- 시작페이지 -->
@@ -23,21 +23,21 @@
         <div class="progress mt-5">
             <div class="progress-bar" role="progressbar" style="width: 25%" ></div>
         </div>
-        <img class="main_bn mt-5" src="./img/click.png" alt="main-bn">
-        <h2 id="title" class="question-content text-center mt-5">문제</h2>
+        <img class="main_bn mt-5" src="./img/click.png" alt="main_bn">
+        <h2 id="title" class="q-content text-center mt-5">문제</h2>
         <input id="type" type="hidden" value="EI">
-        <button id="A" type="button" class="question-text btn btn-primary mt-5">A</button>
-        <button id="B" type="button" class="question-text btn btn-primary mt-2 mb-5">B</button>
+        <button id="A" type="button" class="btn btn-primary mt-5 q-text">A</button>
+        <button id="B" type="button" class="btn btn-primary mt-2 mb-5 q-text">B</button>
     </article>
     <!-- 문제페이지 -->
     <article class="result">
         <img id="img" class="rounded-circle mt-5" src="./img/bigdata.jpeg" alt="job">
-        <h1 class="text-center mt-5">나의 연봉 측정!</h1>
-        <h2 id="salary" class="text-center mt-2">연봉</h2>
-        <h3 id="explain" class="text-center mt-3">설명</h3>
-        <h1 class="text-center mt-5">추천직업</h1>
-        <h3 id="job" class="text-center mt-3 mb-3">직업</h3>
-        <h5 class="mt-5" style="text-align: center;">★ 국비지원으로 전액 무료 교육듣고 연봉올리기 ★</h5>
+        <p class="text-center mt-5 title28">MBTI에 따른 나의 연봉 측정!</p>
+        <h3 id="explain" class="text-center">설명</h3>
+        <p id="salary" class="mt-3 title32">연봉</p>
+        <h1 class="text-center mt-5 title28">추천 직업</h1>
+        <h3 id="job" class="mt-3 mb-3 title32">직업</h3>
+        <h5 class="mt-5 mb-3 q-text text-center">↓↓↓ 무료교육 신청하고 연봉올리기 ↓↓↓</h5>
         <article class="end_banner">
             <a class="mt-2 mr-1 banner" href="https://ysedu.or.kr/p/?j=232&edu_code=Vmtab2QxWnRWbEpRVkRBOStN"><img class="banner-img" src="./img/ad1.png" alt="UI/UX 디자인과 프론트엔드 개발자"></a>
             <a class="mt-2 mr-1 banner" href="https://ysedu.or.kr/p/?j=232&edu_code=Vmtab2QxVnJNVkpRVkRBOStN"><img class="banner-img" src="./img/ad2.png" alt="AI플랫폼을 활용한 빅데이터 분석 전문가"></a>
@@ -48,42 +48,37 @@
             <a class="mt-2 mr-1 banner" href="https://ysedu.or.kr/p/?j=232&edu_code=Vmtab2QxWnRWbTVRVkRBOStN"><img class="banner-img" src="./img/ad5.png" alt="게임 그래픽 디자이너(2D원화, 3D모델링)"></a>
             <a class="mt-2 banner" href="https://yonsai.or.kr"><img class="banner-img" src="./img/ad6.png" alt="고3위탁교육 전용 홈페이지"></a>
         </article>
-        <button id="again" type="button" class="question-text btn btn-primary mt-5">나도 무료교육 신청 대상일까?</button>
-        <button type="button" onclick="window.location.reload();" class="btn btn-primary mt-3">처음으로</button>      
+        <button id="again" type="button" class="btn btn-primary mt-5">나도 무료교육 신청 대상일까?</button>
+        <button type="button" onclick="window.location.reload();" class="btn btn-outline-primary mt-3">다시하기</button>
         <div style="margin: 0 auto;" class="addthis_inline_share_toolbox_50y5 mt-5"></div><!-- addthis -->
     </article>
     <!-- 결과페이지 -->
     <article class="again">
         <h1 class="mt-5">나도 무료교육 신청 대상일까?</h1>
         <div class="mt-2">
-            <button type="button" class="bye1 btn btn-secondary mt-3">공무원 또는 사립학교의 교직원이다</button>
-            <button type="button" class="goal1 btn btn-primary mt-3">졸업까지 남은 수업연한이 2년 이내인 대학생</button>
-            <button type="button" class="bye1 btn btn-secondary mt-3">만 75세 이상이다.</button>
-            <button type="button" class="goal1 btn btn-primary mt-3">구직을 희망하는 </button>
-            <button type="button" class="bye1 btn btn-secondary mt-3">연매출 1.5억 이상 자영업자</button>
-            <button type="button" class="bye1 btn btn-secondary mt-3">월 임금 300만원 이상인 특수형태근로종사자</button>
-            <button type="button" class="bye1 btn btn-secondary mt-3">월 임금 300만원 이상이면서 45세 미만인 대규모기업종사자</button>
-            <button type="button" class="goal1 btn btn-primary mt-3">해당사항 없음</button>
+            <button type="button" class="bye1 btn btn-secondary mt-3">만 75세 이상이거나<br>국민기초생활보장법 제9조에 따른 생계급여 수급자이다.</button>
+            <button type="button" class="bye1 btn btn-secondary mt-3">공무원 또는 사립학교의 교직원 또는<br>졸업까지 남은 수업연한이 2년을 초과하는 대학생이다</button>
+            <button type="button" class="bye1 btn btn-secondary mt-3">연매출 1.5억 이상 자영업자 이거나<br>월 임금 300만원 이상인 특수형태근로종사자 또는<br>월 임금 300만원 이상이면서 45세 미만인 대규모기업종사자이다.</button>
+            <button type="button" class="goal1 btn btn-primary mt-3">해당사항 없는 구직 희망자</button>
         <div>
     </article>
     <!-- 내배카대상확인 -->
     <article class="bye">
         <img class="img300 rounded-circle mt-5" src="./img/bye.jpg" alt="bye">
         <h1 class="fl_col mt-5">측정불가</h1>
-        <h3 class="fl_col mt-3">아쉽지만 국비지원 교육 신청 대상이 아니네요. 다음기회에~</h3>
-        <a class="fl_col mt-2 mr-1 banner" href="https://www.ysedu.or.kr/"><button type="button" class="btn btn-primary mt-3">조금 더 알아볼까?</button></a>
-        <button type="button" onclick="window.history.go(-1);" class="btn btn-primary mt-3">이전으로</button>
-        <button type="button" onclick="window.location.reload();" class="btn btn-primary mt-3">처음으로</button>
+        <h3 class="fl_col mt-3">아쉽지만 국비지원 교육 신청 대상이 아니네요.</h3>
+        <a class="fl_col mt-2 mr-1 banner" href="https://www.ysedu.or.kr/"><button type="button" class="btn btn-primary mt-3">그래도 조금 더 알아볼까?</button></a>
+        <button type="button" onclick="window.location.reload();" class="btn btn-outline-primary mt-3">다시하기</button>
     </article>
     <!-- 측정불가 -->
     <article class="goal">
         <img class="img300 rounded-circle mt-5" src="./img/goal.gif" alt="goal">
         <h1 class="fl_col mt-5">축하합니다!</h1>
-        <h3 class="fl_col mt-3">국비지원 신청대상입니다!!! </h3>
-        <a class="fl_col mt-2 mr-1 banner" href="http://pf.kakao.com/_fyxgxfj/chat">
-            <button type="button" class="btn btn-primary mt-3">교육과정 문의하기</button>
-        </a>
-        <button type="button" onclick="window.location.reload();" class="btn btn-primary mt-3">처음으로</button>
+        <h3 class="fl_col mt-3">무료 수강 대상입니다!!! </h3>
+        <div class="fl_col mt-2 mr-1">
+            <a class="fl_col mt-2 mr-1 start_btn" href="http://pf.kakao.com/_fyxgxfj/chat"><button type="button" class="btn btn-warning mt-3">카톡으로 문의하기</button></a>
+            <button type="button" onclick="window.location.reload();" class="btn btn-outline-primary mt-3">다시하기</button>
+        </div>
     </article>
     <!-- 카톡문의유입페이지 -->
     <article class="logo">
@@ -164,6 +159,7 @@
             function bye() {
                 $(".again").hide();
                 $(".bye").show();
+                $(".ad_banner").show();
             }
         })
         $(".goal1").click(function(){
@@ -171,6 +167,7 @@
             function goal() {
                 $(".again").hide();
                 $(".goal").show();
+                $(".ad_banner").show();
             }
         })
         // 페이지 넘기기
