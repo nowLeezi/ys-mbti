@@ -34,24 +34,23 @@ article {
     color: #7c7c7c;
     text-align: center;
 }
-.title24 {
-    font-size: 24px;
-    font-weight: 300;
-    text-align: center;
-}
 .title_clr{
-    font-size: 28px;
+    font-size: 26px;
     font-weight: 600;
     color: #5D44AD;
     text-align: center;
     background: #fff;
 }
+.title24 {
+    font-size: 22px;
+    font-weight: 300;
+    text-align: center;
+}
 .title28{
-    font-size: 28px; font-weight: 600; text-align: center;
+    font-size: 26px; font-weight: 600; text-align: center;
 }
 .title32{
-    font-size: 32px; text-align: center; color: #5D44AD;
-
+    font-size: 30px; text-align: center; color: #5D44AD;
 }
 .main_bn{
     width: 80%;
@@ -73,9 +72,11 @@ article {
 .q-content {
     font-size: 20px;
     font-family: 600;
+    text-align: center;
 }
 #explain{
-    font-size: 18px; text-align: center;
+    font-size: 18px; 
+    text-align: center;
 }
 #job{
     color: #5D44AD;
